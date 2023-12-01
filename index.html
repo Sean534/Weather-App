@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css"> <!--Links the style file into the html-->
-    <script src="./script.js"></script> <!--Links the script file into the html-->
+    <script src="./script.js" defer></script> <!--Links the script file into the html-->
 </head>
 
 
@@ -24,11 +24,13 @@
         </svg></button>
         </div> 
 
-        <div class="weather"> <!--this is for the weather field-->
+        <div class="weather loading"> <!--this is for the weather field-->
             <h2 class="city">Weather In bruh</h2>
-            <h1 class="temp">52</div>
-            <img src="" alt="" class="icon"> <!--this is for icon of the weather-->
+            <h1 class="temp">52°C</div>
+            <div class="flex">
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon"> <!--this is for icon of the weather-->
             <div class="description">Cloudy</div>
+        </div>
             <div class="humidity">Humidity: 60%</div>
             <div class="wind">Wind Speed: 6.2km</div>
         </div>
